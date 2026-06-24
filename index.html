@@ -20,11 +20,6 @@
       </g>
     </svg>
 </a>
-
-    <nav>
-        <a href="#">How to Play</a>
-        <a href="#" class="nav-play">Play</a>
-    </nav>
 </header>
 
 <!-- MAIN -->
@@ -37,8 +32,7 @@
             <h1>Urban Wordle</h1>
             <div class="tagline">by the streets · word game · 1–6 guesses</div>
             <div class="definition">
-                Guess the <strong>5-letter slang word</strong> in 6 tries.
-                Straight from <strong>Urban Dictionary</strong> — no cap, no basic words here.
+                Guess the <strong>5-letter slang word or acronym</strong> in 6 tries. no cap, no basic words here.
                 🟩 Right letter, right spot. 🟨 Right letter, wrong spot. ⬜ Not in the word, no fr.
             </div>
         </div>
@@ -64,10 +58,8 @@
             <h2 id="result-title"></h2>
             <p id="result-sub"></p>
             <div id="result-answer" class="answer-reveal" style="display:none;"></div>
-            <br>
-            <button class="btn-play-again" onclick="newGame()">New Word</button>
         </div>
-
+        <br>
         <!-- Keyboard -->
         <div id="keyboard"></div>
     </div>
@@ -85,7 +77,7 @@
     // ─────────────────────────────────────────────
     //  CONFIGURATION
     // ─────────────────────────────────────────────
-    const WORDS_JSON_URL = 'https://your-domain.com/words.json'; // ← replace with your URL
+    const WORDS_JSON_URL = 'https://raw.githubusercontent.com/Cade-Bray/Urban-Worlde/refs/heads/master/words.json';
     const MAX_GUESSES    = 6;
     const WORD_LENGTH    = 5;
     const COOKIE_WORD    = 'uw_word';
@@ -444,28 +436,6 @@
             guesses,
             gameOver
         }, 2);
-    }
-
-    // ─────────────────────────────────────────────
-    //  NEW GAME (picks random from list)
-    // ─────────────────────────────────────────────
-    function newGame() {
-        if (wordList.length > 0) {
-            secretWord = wordList[Math.floor(Math.random() * wordList.length)].toLowerCase();
-        }
-        guesses      = [];
-        gameOver     = false;
-        currentRow   = 0;
-        currentCol   = 0;
-        currentGuess = [];
-        deleteCookie(COOKIE_STATE);
-
-        // Reset board & keyboard
-        buildBoard();
-        buildKeyboard();
-
-        // Hide result
-        document.getElementById('result-section').style.display = 'none';
     }
 
     // ─────────────────────────────────────────────
