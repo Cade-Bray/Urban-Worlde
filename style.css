@@ -318,6 +318,42 @@ main {
     margin-bottom: 16px;
     letter-spacing: 3px;
 }
+
+#result-description {
+    display: flex;
+    margin-inline: 12px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#result-example {
+    display: flex;
+    margin-inline: 12px;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.btn-ud-link {
+    display: none; /* Toggled to inline-block by script.js */
+    background: #EFFF00;
+    color: var(--ud-black);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: opacity 0.15s;
+}
+
+.btn-ud-link:hover {
+    opacity: 0.85;
+}
+
 .btn-share {
     background: var(--ud-black);
     color: #EFFF00;
