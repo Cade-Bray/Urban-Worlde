@@ -36,7 +36,7 @@ function deleteCookie(name) {
 // ─────────────────────────────────────────────
 //  GAME STATE
 // ─────────────────────────────────────────────
-let secretWord   = '';
+let secretWord   = {};
 let wordList     = [];
 let currentRow   = 0;
 let currentCol   = 0;
@@ -57,7 +57,6 @@ async function fetchWords() {
 
     if (storedWord && storedWord.date === todayKey) {
         secretWord = storedWord.word;
-        wordList   = storedWord.words || [];
         if (storedState && storedState.date === todayKey) {
             restoreState(storedState);
         } else {
@@ -71,11 +70,10 @@ async function fetchWords() {
         const res  = await fetch(WORDS_JSON_URL);
         const data = await res.json();
 
-        secretWord = data.word.toLowerCase().trim();
-        wordList   = (data.words || []).map(w => w.toLowerCase().trim());
+        secretWord = data.today;
 
         // Store in cookie (expires in 2 days)
-        setCookie(COOKIE_WORD, { word: secretWord, words: wordList, date: todayKey }, 2);
+        setCookie(COOKIE_WORD, { word: secretWord, date: todayKey }, 2);
         deleteCookie(COOKIE_STATE);  // fresh game
 
         initBoard();
@@ -149,7 +147,7 @@ function restoreState(state) {
     // Replay all past guesses visually (instant, no animation)
     for (let r = 0; r < guesses.length; r++) {
         const guess = guesses[r];
-        const result = scoreGuess(guess, secretWord);
+        const result = scoreGuess(guess, secretWord.word);
         for (let c = 0; c < WORD_LENGTH; c++) {
             const tile = getTile(r, c);
             tile.textContent = guess[c].toUpperCase();
@@ -163,7 +161,7 @@ function restoreState(state) {
     currentGuess = [];
 
     if (gameOver) {
-        const won = guesses.length > 0 && guesses[guesses.length - 1] === secretWord;
+        const won = guesses.length > 0 && guesses[guesses.length - 1] === secretWord.word;
         showResult(won);
     }
 }
@@ -256,7 +254,7 @@ function submitGuess() {
 
     const guess = currentGuess.join('');
 
-    const result = scoreGuess(guess, secretWord);
+    const result = scoreGuess(guess, secretWord.word);
 
     // Animate tiles with flip + color
     for (let c = 0; c < WORD_LENGTH; c++) {
@@ -280,7 +278,7 @@ function submitGuess() {
         currentCol = 0;
         currentGuess = [];
 
-        const won = guess === secretWord;
+        const won = guess === secretWord.word;
         if (won || currentRow >= MAX_GUESSES) {
             gameOver = true;
             saveState();
@@ -326,7 +324,10 @@ function showResult(won) {
     const section = document.getElementById('result-section');
     const title   = document.getElementById('result-title');
     const sub     = document.getElementById('result-sub');
-    const answer  = document.getElementById('result-answer');
+    const answer  = document.getElementById('result-word');
+    const desc = document.getElementById('result-description');
+    const ex = document.getElementById('result-example');
+    const linkBtn = document.getElementById('result-link');
 
     if (won) {
         title.textContent = WIN_MESSAGES[Math.min(guesses.length - 1, WIN_MESSAGES.length - 1)];
@@ -335,8 +336,29 @@ function showResult(won) {
     } else {
         title.textContent    = 'L + ratio 💀';
         sub.textContent      = 'The word was:';
-        answer.textContent   = secretWord;
-        answer.style.display = 'inline-block';
+    }
+
+    answer.textContent = secretWord.word;
+    answer.style.display = 'inline-block';
+
+    // Populate the Description and Example
+    if (desc) desc.textContent = secretWord.description || '';
+
+    if (ex) {
+        if (secretWord.example) {
+            ex.innerHTML = `"${secretWord.example.replace(/\n/g, '<br>')}"`;
+        } else {
+            ex.innerHTML = '';
+        }
+    }
+
+    if (linkBtn) {
+        if (secretWord.link) {
+            linkBtn.href = secretWord.link;
+            linkBtn.style.display = 'inline-block';
+        } else {
+            linkBtn.style.display = 'none';
+        }
     }
 
     section.style.display = 'block';
@@ -361,11 +383,11 @@ function saveState() {
 function copyResultToClipboard() {
     if (!gameOver) return;
 
-    const won = guesses[guesses.length - 1] === secretWord;
+    const won = guesses[guesses.length - 1] === secretWord.word;
     const score = won ? guesses.length : 'X';
 
     const emojiGrid = guesses.map(guess => {
-        const result = scoreGuess(guess, secretWord);
+        const result = scoreGuess(guess, secretWord.word);
         return result.map(r => {
             if (r === 'correct') return '🟩';
             if (r === 'present') return '🟨';
