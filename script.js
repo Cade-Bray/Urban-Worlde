@@ -356,6 +356,44 @@ function saveState() {
 }
 
 // ─────────────────────────────────────────────
+//  SAVE BOARD STATE TO CLIPBOARD
+// ─────────────────────────────────────────────
+function copyResultToClipboard() {
+    if (!gameOver) return;
+
+    const won = guesses[guesses.length - 1] === secretWord;
+    const score = won ? guesses.length : 'X';
+
+    const emojiGrid = guesses.map(guess => {
+        const result = scoreGuess(guess, secretWord);
+        return result.map(r => {
+            if (r === 'correct') return '🟩';
+            if (r === 'present') return '🟨';
+            return '⬛';
+        }).join('');
+    }).join('\n');
+
+    const text = `Urban Wordle ${score}/${MAX_GUESSES}\n${emojiGrid}`;
+
+    navigator.clipboard.writeText(text).then(() => {
+        showToast('Copied to clipboard! 📋');
+    }).catch(() => {
+        // Fallback for browsers that block clipboard access
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        // Intentional depreciated use for browsers that are blocking clipboard access.
+        // noinspection JSDeprecatedSymbols
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('Copied to clipboard! 📋');
+    });
+}
+
+// ─────────────────────────────────────────────
 //  TOAST
 // ─────────────────────────────────────────────
 let toastTimer = null;
