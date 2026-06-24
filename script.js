@@ -164,7 +164,7 @@ function restoreState(state) {
 
     if (gameOver) {
         const won = guesses.length > 0 && guesses[guesses.length - 1] === secretWord;
-        showResult(won, false);
+        showResult(won);
     }
 }
 
@@ -256,13 +256,6 @@ function submitGuess() {
 
     const guess = currentGuess.join('');
 
-    // Optional: validate against word list (comment out to allow any word)
-    // if (wordList.length > 0 && !wordList.includes(guess)) {
-    //   shakeRow(currentRow);
-    //   showToast('Not in the word list');
-    //   return;
-    // }
-
     const result = scoreGuess(guess, secretWord);
 
     // Animate tiles with flip + color
@@ -291,7 +284,7 @@ function submitGuess() {
         if (won || currentRow >= MAX_GUESSES) {
             gameOver = true;
             saveState();
-            setTimeout(() => showResult(won, true), 400);
+            setTimeout(() => showResult(won), 400);
         } else {
             saveState();
         }
@@ -329,7 +322,7 @@ const WIN_MESSAGES = [
     'down bad but came through 😤'
 ];
 
-function showResult(won, animate) {
+function showResult(won) {
     const section = document.getElementById('result-section');
     const title   = document.getElementById('result-title');
     const sub     = document.getElementById('result-sub');
@@ -390,4 +383,4 @@ function shakeRow(r) {
 // ─────────────────────────────────────────────
 //  BOOT
 // ─────────────────────────────────────────────
-fetchWords();
+fetchWords().then();
