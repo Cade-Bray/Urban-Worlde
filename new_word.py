@@ -35,7 +35,7 @@ def write_state(words):
     with open('words.json', 'w') as f:
         json.dump(words, f, indent=2)
 
-def scrape_urban_dictionary():
+def scrape_urban_dictionary(last_word):
     url = 'https://www.urbandictionary.com/'
 
     headers = {
@@ -58,7 +58,7 @@ def scrape_urban_dictionary():
         # Pull the word directly from the data attribute on the container
         word_text = card.get("data-word", "")
 
-        if len(word_text) == 5 and word_text.isalpha():
+        if len(word_text) == 5 and word_text.isalpha() and word_text != last_word:
 
             # Extract description using the specific class
             meaning_parts = card.xpath(".//div[contains(@class, 'meaning')]//text()")
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     current_words = get_words()
 
     print("Scraping Urban Dictionary homepage...")
-    scraped_word_obj = scrape_urban_dictionary()
+    scraped_word_obj = scrape_urban_dictionary(current_words['today']['word'])
 
     if scraped_word_obj:
         new_word_dict = obj_to_dict(scraped_word_obj)
