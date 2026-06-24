@@ -1,71 +1,160 @@
 {
-  "word": "sussy",
-  "words": [
-    "based",
-    "blunt",
-    "booty",
-    "boujy",
-    "bussi",
-    "bussy",
-    "chefs",
-    "chirp",
-    "clout",
-    "crine",
-    "crisp",
-    "dilfs",
-    "dippy",
-    "drool",
-    "dummy",
-    "dumpy",
-    "dunzo",
-    "finna",
-    "finny",
-    "fleek",
-    "ghost",
-    "glaze",
-    "glowy",
-    "gobby",
-    "goofy",
-    "goopy",
-    "gucci",
-    "gyatt",
-    "himbo",
-    "hypey",
-    "iykyk",
-    "juicy",
-    "larpy",
-    "lewks",
-    "lowki",
-    "milfs",
-    "moots",
-    "nocap",
-    "ohioy",
-    "oomfs",
-    "perky",
-    "ratio",
-    "rizzy",
-    "salty",
-    "saucy",
-    "shade",
-    "shook",
-    "sigma",
-    "simps",
-    "slaps",
-    "smoky",
-    "snacc",
-    "spicy",
-    "sussy",
-    "swerv",
-    "sybau",
-    "thicc",
-    "thots",
-    "thump",
-    "turnt",
-    "vibez",
-    "wildy",
-    "wokey",
-    "yikes",
-    "zaddy",
-    "zesty"
+  "today": {
+    "word": "slaps",
+    "description": "A word for suspicious",
+    "example": "",
+    "link": "http://sussy.urbanup.com/15756600"
+  },
+  "fallback_words": [
+    {
+      "word": "based",
+      "description": "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think. Especially common in online political slang.\n\nThe opposite of cringe, some times the opposite of biased.\n\nThe latter usage is the original use as coined by rapper Lil B, and the word originally took off on the meta-ironic website 4Chan with the latter meaning. For that reason the word is largely used meta-ironically (without context you can't tell if it's being used ironically or sincerely as it's used in both ways) and was popularized in online political slang of conservatives and the political right before being adopted into mainstream online political slang (likely through shitposting websites or subreddits such as r/politicalcompass memes that are similar to 4chan in their meta-irony and \"edginess\" but contain a wider variety of political beliefs) and eventually adopted into general online vernacular.\n\nWhen used in online political language it can mean \"based in fact\" or the opposite of biased due to the number of people who saw it being first used seriously by the online political right and came to the conclusion that is was related to the phrase \"destroyed with facts and logic\" in reference to right wing personality Ben Shapiro.",
+      "example": "Example 1: meta-ironic\n\nShitposter: Posts gif of funny monkey Return to monke\nCommentor: Based\n\nExample 2: meta-ironic\n4chan Anon 1: I'm going to commit hate crimes\n4chan Anon 2: Based\n\nExample 3: Politics\nLeftist 1: There is no ethical consumption under capitalism.\nLeftist 2: Based.",
+      "link": "http://based.urbanup.com/15518766"
+    },
+    {
+      "word": "blunt",
+      "description": "noun: blunt; plural noun: blunts\na hollowed-out cigar filled with cannabis.",
+      "example": "Adam: Pass me the blunt dude.\n\nJames: OK bro!",
+      "link": "http://blunt.urbanup.com/13773186"
+    },
+    {
+      "word": "booty",
+      "description": "The final stage in the evolution of a butt.\n\nFlat (you're spanking bones) > Petite (awww it's cute) > Apple (nice to eat and look) > Bubble (Instagram certified thicc) > Booty (ticket to rap videos)\n\nBest served with skinny jeans, leggings and yoga pants.",
+      "example": "\nNicki: Boy you got a nice booty on you!\n\nMinhaj: Boo, I'm Hassan Minhaj, I've got everything nice going on!",
+      "link": "http://booty.urbanup.com/13713630"
+    },
+    {
+      "word": "bouji",
+      "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
+      "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
+      "link": "http://bouji.urbanup.com/16891433"
+    },
+    {
+      "word": "bussi",
+      "description": "A boy pussy",
+      "example": "\nI like your bussi",
+      "link": "http://bussi.urbanup.com/12867273"
+    },
+    {
+      "word": "bussy",
+      "description": "boy pussy\n\nthe asshole of a male",
+      "example": "\nme: dad! dad! i just wrote an honest definition of bussy on urban dictionary!\ndad:\nwhere is my dad",
+      "link": "http://bussy.urbanup.com/15841758"
+    },
+    {
+      "word": "chefs",
+      "description": "The bro name for the Kansas City Chiefs. It's been scientifically proven that if a fan refers to the Kansas City Chiefs as the Chefs, the team is statistically more likely to win.",
+      "example": "The Chefs are takin state.",
+      "link": "http://chefs.urbanup.com/5350916"
+    },
+    {
+      "word": "chirp",
+      "description": "This is what you are doing when you insult someone. You are chirping them.",
+      "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
+      "link": "http://chirp.urbanup.com/2299253"
+    },
+    {
+      "word": "clout",
+      "description": "Clout is being famous and having influence",
+      "example": "Wow - Rice, Mitch, and Banks have hella clout",
+      "link": "http://clout.urbanup.com/11939533"
+    },
+    {
+      "word": "crine",
+      "description": "A \"word\" aggravating people say in replace of \"I'm crying\". Usually used when things are remotely funny.",
+      "example": "*See's a Kermit the Frog: But That's None Of My Business meme.*\nI'M CRINE!",
+      "link": "http://crine.urbanup.com/7816044"
+    },
+    {
+      "word": "crisp",
+      "description": "One of Rachel and Hallie\u2019s high-fives.",
+      "example": "*high-fives*\nBro, that was heckin crisp.",
+      "link": "http://crisp.urbanup.com/14541006"
+    },
+    {
+      "word": "dilfs",
+      "description": "An acronym for \"Dad I'd Like to F***\". A dilf is any man (typically between the ages of 30-50) who is incredibly attractive and has kids. They are usually really cut, from activities such as pushing strollers, giving piggyback rides, and intense trips to the local park or Disney World. They also have a killer smile and sense of childlike joy, because they play with their kids all the time. Unfortunately, getting with them is hard, as they are typically very faithful to their wife (see MILF).",
+      "example": "Girl #1: Did you see that guy with the stroller over there? He's a total dilf!\nGirl #2: Yeah, but don't go up and flirt with him. That woman with him is probably his wife.",
+      "link": "http://dilf.urbanup.com/7105687"
+    },
+    {
+      "word": "dippy",
+      "description": "Goofy, silly, a person with a duh moment.",
+      "example": "Magen why do you have to be so dippy?",
+      "link": "http://dippy.urbanup.com/6911018"
+    },
+    {
+      "word": "drool",
+      "description": "leaking saliva from ones mouth. often with desire for something ie Tasty feed, woman, sexy car.",
+      "example": "she's not yours to drool over",
+      "link": "http://drool.urbanup.com/108443"
+    },
+    {
+      "word": "dummy",
+      "description": "A Baltimore Slang term used to address everybody no matter the situation. (... or is a proud wilder weenie, iykyk)",
+      "example": "\u201c Dummy stop playing with me\u201d\n\u201c Woe Dummy Fuck is up\u201d\n\n\u201cDummy not even stamped down cherry hill his bluffin ass\u201d",
+      "link": "http://dummy.urbanup.com/12826937"
+    },
+    {
+      "word": "dumpy",
+      "description": "another word for ass...",
+      "example": "you got one biiig dumpy bro",
+      "link": "http://dumpy.urbanup.com/14545615"
+    },
+    {
+      "word": "dunzo",
+      "description": "Dunzo, a slang word for done/finshed. Made famous by the Laguna Beach cast.",
+      "example": "This car is so dunzo. (Kristin's car breaks down.)",
+      "link": "http://dunzo.urbanup.com/936426"
+    },
+    {
+      "word": "finna",
+      "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
+      "example": "I'm finna go da' sto!",
+      "link": "http://finna.urbanup.com/151335"
+    },
+    {
+      "word": "fleek",
+      "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
+      "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
+      "link": "http://fleek.urbanup.com/8196266"
+    },
+    {
+      "word": "glaze",
+      "description": "(Adj.) A coating of ejactulate upon a surface.",
+      "example": "Nice aim! The fuckin' Wigga did a window glaze again, dude!\n\nSorry man! I missed my biatch",
+      "link": "http://glaze.urbanup.com/9580"
+    },
+    {
+      "word": "glowy",
+      "description": "Term used for undercover FBI agents and other obvious government honeypots on 4chan intending to induce people to commit hate crimes and other criminal offenses.",
+      "example": "\"STFU glowy, you're just trying to stay relevant.\"\n\n\"Don't trust them, they're glowies.\"",
+      "link": "http://glowy.urbanup.com/14261629"
+    },
+    {
+      "word": "gyatt",
+      "description": "when anything has a phat ass",
+      "example": "GYATT (that’s all that needs to be said)",
+      "link": "http://gyatt.urbanup.com/17717021"
+    },
+    {
+      "word": "sussy",
+      "description": "A word for suspicious",
+      "example": "",
+      "link": "http://sussy.urbanup.com/15756600"
+    },
+    {
+      "word": "sybau",
+      "description": "Shut your bitch ass up",
+      "example": "Shooter, SYBAU",
+      "link": "http://sybau.urbanup.com/3350910"
+    },
+    {
+      "word": "thicc",
+      "description": "Phat ass",
+      "example": "Damn your pet gold fish got a phat ass, he hella thicc",
+      "link": "http://thicc.urbanup.com/13009172"
+    }
   ]
 }
