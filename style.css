@@ -20,7 +20,7 @@
 
 body {
     background: var(--ud-gray-bg);
-    font-family: var(--font-main);
+    font-family: var(--font-main), serif;
     color: var(--ud-black);
     min-height: 100vh;
     display: flex;
@@ -117,7 +117,6 @@ main {
 .legend {
     display: flex;
     gap: 16px;
-    margin-bottom: 18px;
     flex-wrap: wrap;
 }
 .legend-item {
@@ -263,7 +262,7 @@ main {
     color: var(--ud-black);
     font-size: 14px;
     font-weight: 800;
-    font-family: var(--font-main);
+    font-family: var(--font-main), serif;
     cursor: pointer;
     text-transform: uppercase;
     transition: background 0.15s, color 0.15s;
@@ -304,7 +303,6 @@ main {
 #result-section p {
     font-size: 14px;
     color: var(--ud-gray-mid);
-    margin-bottom: 16px;
 }
 #result-section .answer-reveal {
     font-size: 26px;
@@ -326,7 +324,7 @@ main {
     padding: 12px 28px;
     font-size: 15px;
     font-weight: 900;
-    font-family: var(--font-main);
+    font-family: var(--font-main), serif;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
