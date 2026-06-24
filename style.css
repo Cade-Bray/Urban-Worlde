@@ -118,6 +118,8 @@ main {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    margin-top: 12px;
+    justify-content: center;
 }
 .legend-item {
     display: flex;
