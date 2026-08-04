@@ -1,9 +1,9 @@
 {
   "today": {
-    "word": "drool",
-    "description": "leaking saliva from ones mouth. often with desire for something ie Tasty feed, woman, sexy car.",
-    "example": "she's not yours to drool over",
-    "link": "http://drool.urbanup.com/108443"
+    "word": "hardo",
+    "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
+    "example": "Wow did you see Jack at practice today? What a hardo!",
+    "link": "https://www.urbandictionary.com/define.php?term=Hardo"
   },
   "fallback_words": [
     {
@@ -161,6 +161,12 @@
       "description": "To take something small, that doesn't quite qualify as a theft. Probably from the Danish \"sk\u00e6v\" or the Dutch \"scheef\", both of which are pronounced similarly, meaning \"askew, or not quite right'. To change an item's ownership without permission, but only something small and of little worth.",
       "example": "\"I skeefed an apple off the neighbor's tree.\" \"I skeefed some chips outta your bag when you looked away.\" \"Don't skeef my chair when I go to the bathroom.\"",
       "link": "https://www.urbandictionary.com/define.php?term=Skeef"
+    },
+    {
+      "word": "hardo",
+      "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
+      "example": "Wow did you see Jack at practice today? What a hardo!",
+      "link": "https://www.urbandictionary.com/define.php?term=Hardo"
     }
   ]
 }
