@@ -137,7 +137,7 @@ def scrape_urban_dictionary():
 
     return scraped_words
 
-# Entry Point
+# Entry Point here
 if __name__ == '__main__':
     current_words = get_words()
     today_str = date.today().isoformat()
