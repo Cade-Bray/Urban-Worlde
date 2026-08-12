@@ -1,9 +1,10 @@
 {
   "today": {
-    "word": "hardo",
-    "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
-    "example": "Wow did you see Jack at practice today? What a hardo!",
-    "link": "https://www.urbandictionary.com/define.php?term=Hardo"
+    "word": "stove",
+    "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
+    "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
+    "link": "https://www.urbandictionary.com/define.php?term=stove",
+    "last_used": "2026-08-12"
   },
   "fallback_words": [
     {
@@ -167,6 +168,13 @@
       "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
       "example": "Wow did you see Jack at practice today? What a hardo!",
       "link": "https://www.urbandictionary.com/define.php?term=Hardo"
+    },
+    {
+      "word": "stove",
+      "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
+      "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
+      "link": "https://www.urbandictionary.com/define.php?term=stove",
+      "last_used": "2026-08-12"
     }
   ]
 }
