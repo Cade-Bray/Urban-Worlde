@@ -43,6 +43,10 @@ let currentCol   = 0;
 let currentGuess = [];
 let guesses      = [];   // array of completed guess strings
 let gameOver     = false;
+let isValidating = false;
+const validApiCache   = new Set();
+const invalidApiCache = new Set();
+const localWordsSet   = new Set();
 
 // ─────────────────────────────────────────────
 //  FETCH + INIT
@@ -55,20 +59,31 @@ async function fetchWords() {
     // If cookie word exists and matches today (we use a date key), restore it
     const todayKey = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
 
-    if (storedWord && storedWord.date === todayKey) {
-        secretWord = storedWord.word;
-        if (storedState && storedState.date === todayKey) {
-            restoreState(storedState);
-        } else {
-            initBoard();
-        }
-        return;
-    }
-
-    // Otherwise fetch fresh
     try {
         const res  = await fetch(WORDS_JSON_URL);
         const data = await res.json();
+
+        if (data.today && data.today.word) {
+            localWordsSet.add(data.today.word.toLowerCase());
+        }
+        if (Array.isArray(data.fallback_words)) {
+            data.fallback_words.forEach(item => {
+                if (item && item.word) localWordsSet.add(item.word.toLowerCase());
+            });
+        }
+
+        if (storedWord && storedWord.date === todayKey) {
+            secretWord = storedWord.word;
+            if (secretWord && secretWord.word) {
+                localWordsSet.add(secretWord.word.toLowerCase());
+            }
+            if (storedState && storedState.date === todayKey) {
+                restoreState(storedState);
+            } else {
+                initBoard();
+            }
+            return;
+        }
 
         secretWord = data.today;
 
@@ -79,7 +94,13 @@ async function fetchWords() {
         initBoard();
     } catch (err) {
         console.error('Failed to load words:', err);
-        document.getElementById('loading').textContent = '⚠️ Couldn\'t load today\'s word. Check the URL in the source.';
+        if (storedWord && storedWord.word) {
+            secretWord = storedWord.word;
+            if (secretWord && secretWord.word) localWordsSet.add(secretWord.word.toLowerCase());
+            initBoard();
+        } else {
+            document.getElementById('loading').textContent = '⚠️ Couldn\'t load today\'s word. Check the URL in the source.';
+        }
     }
 }
 
@@ -147,7 +168,7 @@ function restoreState(state) {
     // Replay all past guesses visually (instant, no animation)
     for (let r = 0; r < guesses.length; r++) {
         const guess = guesses[r];
-        const result = scoreGuess(guess, secretWord.word);
+        const result = scoreGuess(guess, secretWord.word.toLowerCase());
         for (let c = 0; c < WORD_LENGTH; c++) {
             const tile = getTile(r, c);
             tile.textContent = guess[c].toUpperCase();
@@ -161,7 +182,7 @@ function restoreState(state) {
     currentGuess = [];
 
     if (gameOver) {
-        const won = guesses.length > 0 && guesses[guesses.length - 1] === secretWord.word;
+        const won = guesses.length > 0 && guesses[guesses.length - 1].toLowerCase() === secretWord.word.toLowerCase();
         showResult(won);
     }
 }
@@ -180,7 +201,7 @@ function attachKeyListeners() {
 }
 
 function handleKey(key) {
-    if (gameOver) return;
+    if (gameOver || isValidating) return;
 
     if (key === '⌫' || key === 'Backspace') {
         deleteLetter();
@@ -243,18 +264,76 @@ function scoreGuess(guess, target) {
 }
 
 // ─────────────────────────────────────────────
+//  WORD VALIDATION
+// ─────────────────────────────────────────────
+async function validateWord(word) {
+    const w = word.toLowerCase();
+
+    // 1. Check local Urban Dictionary words & cached valid words
+    if (localWordsSet.has(w) || validApiCache.has(w)) {
+        return true;
+    }
+
+    // 2. Check cached invalid words
+    if (invalidApiCache.has(w)) {
+        return false;
+    }
+
+    // 3. Query Free Dictionary API with 2s timeout & spinning loader toast
+    showToastWithSpinner('Checking word...');
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 2000);
+
+    try {
+        const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(w)}`, {
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+
+        if (response.ok) {
+            validApiCache.add(w);
+            hideToast();
+            return true;
+        } else {
+            invalidApiCache.add(w);
+            return false;
+        }
+    } catch (err) {
+        clearTimeout(timeoutId);
+        invalidApiCache.add(w);
+        return false;
+    }
+}
+
+// ─────────────────────────────────────────────
 //  SUBMIT GUESS
 // ─────────────────────────────────────────────
-function submitGuess() {
+async function submitGuess() {
+    if (gameOver || isValidating) return;
+
     if (currentCol < WORD_LENGTH) {
         shakeRow(currentRow);
         showToast('Not enough letters, fam');
         return;
     }
 
-    const guess = currentGuess.join('');
+    const guess = currentGuess.join('').toLowerCase();
+    const target = (secretWord.word || '').toLowerCase();
 
-    const result = scoreGuess(guess, secretWord.word);
+    isValidating = true;
+    const isValid = await validateWord(guess);
+    isValidating = false;
+
+    if (!isValid) {
+        hideToast();
+        shakeRow(currentRow);
+        showToast('Not in word list 💀');
+        return;
+    }
+
+    hideToast();
+    const result = scoreGuess(guess, target);
 
     // Animate tiles with flip + color
     for (let c = 0; c < WORD_LENGTH; c++) {
@@ -278,7 +357,7 @@ function submitGuess() {
         currentCol = 0;
         currentGuess = [];
 
-        const won = guess === secretWord.word;
+        const won = guess === target;
         if (won || currentRow >= MAX_GUESSES) {
             gameOver = true;
             saveState();
@@ -383,11 +462,12 @@ function saveState() {
 function copyResultToClipboard() {
     if (!gameOver) return;
 
-    const won = guesses[guesses.length - 1] === secretWord.word;
+    const target = (secretWord.word || '').toLowerCase();
+    const won = guesses.length > 0 && guesses[guesses.length - 1].toLowerCase() === target;
     const score = won ? guesses.length : 'X';
 
     const emojiGrid = guesses.map(guess => {
-        const result = scoreGuess(guess, secretWord.word);
+        const result = scoreGuess(guess.toLowerCase(), target);
         return result.map(r => {
             if (r === 'correct') return '🟩';
             if (r === 'present') return '🟨';
@@ -424,7 +504,22 @@ function showToast(msg, duration = 1800) {
     el.textContent = msg;
     el.classList.add('show');
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+    if (duration > 0) {
+        toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+    }
+}
+
+function showToastWithSpinner(msg) {
+    const el = document.getElementById('toast');
+    el.innerHTML = `<span class="spinner"></span> ${msg}`;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+}
+
+function hideToast() {
+    const el = document.getElementById('toast');
+    el.classList.remove('show');
+    clearTimeout(toastTimer);
 }
 
 // ─────────────────────────────────────────────
