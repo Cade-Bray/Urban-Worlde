@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "stove",
-    "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
-    "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
-    "link": "https://www.urbandictionary.com/define.php?term=stove",
-    "last_used": "2026-08-12"
+    "word": "bouji",
+    "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
+    "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
+    "link": "http://bouji.urbanup.com/16891433",
+    "last_used": "2026-08-13"
   },
   "fallback_words": [
     {
@@ -29,7 +29,8 @@
       "word": "bouji",
       "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
       "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
-      "link": "http://bouji.urbanup.com/16891433"
+      "link": "http://bouji.urbanup.com/16891433",
+      "last_used": "2026-08-13"
     },
     {
       "word": "bussi",
