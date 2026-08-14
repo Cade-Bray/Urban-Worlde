@@ -279,31 +279,74 @@ async function validateWord(word) {
         return false;
     }
 
-    // 3. Query Free Dictionary API with 2s timeout & spinning loader toast
+    // 3. Query dictionary APIs with retry loop & spinning loader toast
     showToastWithSpinner('Checking word...');
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000);
+    const maxAttempts = 3;
 
-    try {
-        const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(w)}`, {
-            signal: controller.signal
-        });
-        clearTimeout(timeoutId);
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        // Attempt Primary API (dictionaryapi.dev)
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 2500);
 
-        if (response.ok) {
-            validApiCache.add(w);
-            hideToast();
-            return true;
-        } else {
-            invalidApiCache.add(w);
-            return false;
+            const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(w)}`, {
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            if (response.ok) {
+                validApiCache.add(w);
+                hideToast();
+                return true;
+            } else if (response.status === 404) {
+                invalidApiCache.add(w);
+                hideToast();
+                return false;
+            }
+            // Non-200/non-404 status (e.g., 502 Bad Gateway) will continue to retry/fallback
+        } catch (err) {
+            // CORS error, network failure, or timeout
+            console.warn(`Primary API attempt ${attempt} failed:`, err);
         }
-    } catch (err) {
-        clearTimeout(timeoutId);
-        invalidApiCache.add(w);
-        return false;
+
+        // Fallback API (Datamuse API - high uptime & reliable CORS)
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 2500);
+
+            const res = await fetch(`https://api.datamuse.com/words?sp=${encodeURIComponent(w)}&max=1`, {
+                signal: controller.signal
+            });
+            clearTimeout(timeoutId);
+
+            if (res.ok) {
+                const data = await res.json();
+                if (Array.isArray(data) && data.some(item => item.word.toLowerCase() === w)) {
+                    validApiCache.add(w);
+                    hideToast();
+                    return true;
+                } else if (Array.isArray(data) && data.length === 0) {
+                    invalidApiCache.add(w);
+                    hideToast();
+                    return false;
+                }
+            }
+        } catch (err) {
+            console.warn(`Fallback API attempt ${attempt} failed:`, err);
+        }
+
+        // If not last attempt, keep spinner active and pause briefly before retrying
+        if (attempt < maxAttempts) {
+            showToastWithSpinner(`Retrying word check (${attempt}/${maxAttempts})...`);
+            await new Promise(res => setTimeout(res, 800));
+        }
     }
+
+    // If all retries fail without a definitive 404, accept word so network issues don't block gameplay
+    hideToast();
+    validApiCache.add(w);
+    return true;
 }
 
 // ─────────────────────────────────────────────
