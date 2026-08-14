@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "bouji",
-    "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
-    "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
-    "link": "http://bouji.urbanup.com/16891433",
-    "last_used": "2026-08-13"
+    "word": "dumpy",
+    "description": "another word for ass...",
+    "example": "you got one biiig dumpy bro",
+    "link": "http://dumpy.urbanup.com/14545615",
+    "last_used": "2026-08-14"
   },
   "fallback_words": [
     {
@@ -102,7 +102,8 @@
       "word": "dumpy",
       "description": "another word for ass...",
       "example": "you got one biiig dumpy bro",
-      "link": "http://dumpy.urbanup.com/14545615"
+      "link": "http://dumpy.urbanup.com/14545615",
+      "last_used": "2026-08-14"
     },
     {
       "word": "dunzo",
