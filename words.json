@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "chefs",
-    "description": "The bro name for the Kansas City Chiefs. It's been scientifically proven that if a fan refers to the Kansas City Chiefs as the Chefs, the team is statistically more likely to win.",
-    "example": "The Chefs are takin state.",
-    "link": "http://chefs.urbanup.com/5350916",
-    "last_used": "2026-08-19"
+    "word": "gyatt",
+    "description": "when anything has a phat ass",
+    "example": "GYATT (that\u2019s all that needs to be said)",
+    "link": "http://gyatt.urbanup.com/17717021",
+    "last_used": "2026-08-20"
   },
   "fallback_words": [
     {
@@ -143,7 +143,8 @@
       "word": "gyatt",
       "description": "when anything has a phat ass",
       "example": "GYATT (that\u2019s all that needs to be said)",
-      "link": "http://gyatt.urbanup.com/17717021"
+      "link": "http://gyatt.urbanup.com/17717021",
+      "last_used": "2026-08-20"
     },
     {
       "word": "sussy",
