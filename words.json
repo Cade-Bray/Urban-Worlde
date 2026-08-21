@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "gyatt",
-    "description": "when anything has a phat ass",
-    "example": "GYATT (that\u2019s all that needs to be said)",
-    "link": "http://gyatt.urbanup.com/17717021",
-    "last_used": "2026-08-20"
+    "word": "clout",
+    "description": "Clout is being famous and having influence",
+    "example": "Wow - Rice, Mitch, and Banks have hella clout",
+    "link": "http://clout.urbanup.com/11939533",
+    "last_used": "2026-08-21"
   },
   "fallback_words": [
     {
@@ -63,7 +63,8 @@
       "word": "clout",
       "description": "Clout is being famous and having influence",
       "example": "Wow - Rice, Mitch, and Banks have hella clout",
-      "link": "http://clout.urbanup.com/11939533"
+      "link": "http://clout.urbanup.com/11939533",
+      "last_used": "2026-08-21"
     },
     {
       "word": "crine",
