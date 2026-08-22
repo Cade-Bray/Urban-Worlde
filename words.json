@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "clout",
-    "description": "Clout is being famous and having influence",
-    "example": "Wow - Rice, Mitch, and Banks have hella clout",
-    "link": "http://clout.urbanup.com/11939533",
-    "last_used": "2026-08-21"
+    "word": "finna",
+    "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
+    "example": "I'm finna go da' sto!",
+    "link": "http://finna.urbanup.com/151335",
+    "last_used": "2026-08-22"
   },
   "fallback_words": [
     {
@@ -120,7 +120,8 @@
       "word": "finna",
       "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
       "example": "I'm finna go da' sto!",
-      "link": "http://finna.urbanup.com/151335"
+      "link": "http://finna.urbanup.com/151335",
+      "last_used": "2026-08-22"
     },
     {
       "word": "fleek",
