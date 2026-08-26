@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "dummy",
-    "description": "A Baltimore Slang term used to address everybody no matter the situation.",
-    "example": "\u201c Dummy stop playing with me\u201d\n\u201c Woe Dummy Fuck is up\u201d\n\n\u201cDummy not even stamped down cherry hill his bluffin ass\u201d",
-    "link": "http://dummy.urbanup.com/12826937",
-    "last_used": "2026-08-25"
+    "word": "chirp",
+    "description": "This is what you are doing when you insult someone. You are chirping them.",
+    "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
+    "link": "http://chirp.urbanup.com/2299253",
+    "last_used": "2026-08-26"
   },
   "fallback_words": [
     {
@@ -59,7 +59,8 @@
       "word": "chirp",
       "description": "This is what you are doing when you insult someone. You are chirping them.",
       "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
-      "link": "http://chirp.urbanup.com/2299253"
+      "link": "http://chirp.urbanup.com/2299253",
+      "last_used": "2026-08-26"
     },
     {
       "word": "clout",
