@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "chirp",
-    "description": "This is what you are doing when you insult someone. You are chirping them.",
-    "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
-    "link": "http://chirp.urbanup.com/2299253",
-    "last_used": "2026-08-26"
+    "word": "grebo",
+    "description": "West Midlands slang word for rockers, bikers, greasers etc. In the late 1980s it was used by the UK music press to refer to a specific scene centered around the bands Pop Will Eat Itself and Crazyhead. The term never found favour with readers of 'the inkies' (Sounds, Melody Maker and the still extant NME) and was soon dropped. Now often used in predominantly working-class areas of the midlands and the north to mean someone who listens to rock-derived music  and/or dresses in a manner that suggests they affiliate themselves with rock music of some kind.",
+    "example": "Some grebo passed with Sabbath playing on his stereo.\nThe Poppies are at no. 17? God, a grebo band in the charts!\nThey're playing nu-metal now, bloody grebos!",
+    "link": "https://www.urbandictionary.com/define.php?term=grebo",
+    "last_used": "2026-08-27"
   },
   "fallback_words": [
     {
@@ -189,6 +189,13 @@
       "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
       "link": "https://www.urbandictionary.com/define.php?term=stove",
       "last_used": "2026-08-12"
+    },
+    {
+      "word": "grebo",
+      "description": "West Midlands slang word for rockers, bikers, greasers etc. In the late 1980s it was used by the UK music press to refer to a specific scene centered around the bands Pop Will Eat Itself and Crazyhead. The term never found favour with readers of 'the inkies' (Sounds, Melody Maker and the still extant NME) and was soon dropped. Now often used in predominantly working-class areas of the midlands and the north to mean someone who listens to rock-derived music  and/or dresses in a manner that suggests they affiliate themselves with rock music of some kind.",
+      "example": "Some grebo passed with Sabbath playing on his stereo.\nThe Poppies are at no. 17? God, a grebo band in the charts!\nThey're playing nu-metal now, bloody grebos!",
+      "link": "https://www.urbandictionary.com/define.php?term=grebo",
+      "last_used": "2026-08-27"
     }
   ]
 }
