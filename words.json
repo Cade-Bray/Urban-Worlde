@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "glaze",
-    "description": "(Adj.) A coating of ejactulate upon a surface.",
-    "example": "Nice aim! The fuckin' Wigga did a window glaze again, dude!\n\nSorry man! I missed my biatch",
-    "link": "http://glaze.urbanup.com/9580",
-    "last_used": "2026-09-02"
+    "word": "dippy",
+    "description": "Goofy, silly, a person with a duh moment.",
+    "example": "Magen why do you have to be so dippy?",
+    "link": "http://dippy.urbanup.com/6911018",
+    "last_used": "2026-09-03"
   },
   "fallback_words": [
     {
@@ -93,7 +93,8 @@
       "word": "dippy",
       "description": "Goofy, silly, a person with a duh moment.",
       "example": "Magen why do you have to be so dippy?",
-      "link": "http://dippy.urbanup.com/6911018"
+      "link": "http://dippy.urbanup.com/6911018",
+      "last_used": "2026-09-03"
     },
     {
       "word": "drool",
