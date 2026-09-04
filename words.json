@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "dippy",
-    "description": "Goofy, silly, a person with a duh moment.",
-    "example": "Magen why do you have to be so dippy?",
-    "link": "http://dippy.urbanup.com/6911018",
-    "last_used": "2026-09-03"
+    "word": "crine",
+    "description": "A \"word\" aggravating people say in replace of \"I'm crying\". Usually used when things are remotely funny.",
+    "example": "*See's a Kermit the Frog: But That's None Of My Business meme.*\nI'M CRINE!",
+    "link": "http://crine.urbanup.com/7816044",
+    "last_used": "2026-09-04"
   },
   "fallback_words": [
     {
@@ -74,7 +74,8 @@
       "word": "crine",
       "description": "A \"word\" aggravating people say in replace of \"I'm crying\". Usually used when things are remotely funny.",
       "example": "*See's a Kermit the Frog: But That's None Of My Business meme.*\nI'M CRINE!",
-      "link": "http://crine.urbanup.com/7816044"
+      "link": "http://crine.urbanup.com/7816044",
+      "last_used": "2026-09-04"
     },
     {
       "word": "crisp",
