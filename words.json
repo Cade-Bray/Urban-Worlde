@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "crine",
-    "description": "A \"word\" aggravating people say in replace of \"I'm crying\". Usually used when things are remotely funny.",
-    "example": "*See's a Kermit the Frog: But That's None Of My Business meme.*\nI'M CRINE!",
-    "link": "http://crine.urbanup.com/7816044",
-    "last_used": "2026-09-04"
+    "word": "thicc",
+    "description": "Phat ass",
+    "example": "Damn your pet gold fish got a phat ass, he hella thicc",
+    "link": "http://thicc.urbanup.com/13009172",
+    "last_used": "2026-09-05"
   },
   "fallback_words": [
     {
@@ -175,7 +175,8 @@
       "word": "thicc",
       "description": "Phat ass",
       "example": "Damn your pet gold fish got a phat ass, he hella thicc",
-      "link": "http://thicc.urbanup.com/13009172"
+      "link": "http://thicc.urbanup.com/13009172",
+      "last_used": "2026-09-05"
     },
     {
       "word": "skeef",
