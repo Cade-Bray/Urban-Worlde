@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "stove",
-    "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
-    "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
-    "link": "https://www.urbandictionary.com/define.php?term=stove",
-    "last_used": "2026-09-06"
+    "word": "glowy",
+    "description": "Term used for undercover FBI agents and other obvious government honeypots on 4chan intending to induce people to commit hate crimes and other criminal offenses.",
+    "example": "\"STFU glowy, you're just trying to stay relevant.\"\n\n\"Don't trust them, they're glowies.\"",
+    "link": "http://glowy.urbanup.com/14261629",
+    "last_used": "2026-09-07"
   },
   "fallback_words": [
     {
@@ -148,7 +148,8 @@
       "word": "glowy",
       "description": "Term used for undercover FBI agents and other obvious government honeypots on 4chan intending to induce people to commit hate crimes and other criminal offenses.",
       "example": "\"STFU glowy, you're just trying to stay relevant.\"\n\n\"Don't trust them, they're glowies.\"",
-      "link": "http://glowy.urbanup.com/14261629"
+      "link": "http://glowy.urbanup.com/14261629",
+      "last_used": "2026-09-07"
     },
     {
       "word": "gyatt",
