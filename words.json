@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "chirp",
-    "description": "This is what you are doing when you insult someone. You are chirping them.",
-    "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
-    "link": "http://chirp.urbanup.com/2299253",
-    "last_used": "2026-09-10"
+    "word": "drool",
+    "description": "leaking saliva from ones mouth. often with desire for something ie Tasty feed, woman, sexy car.",
+    "example": "she's not yours to drool over",
+    "link": "http://drool.urbanup.com/108443",
+    "last_used": "2026-09-11"
   },
   "fallback_words": [
     {
@@ -101,7 +101,8 @@
       "word": "drool",
       "description": "leaking saliva from ones mouth. often with desire for something ie Tasty feed, woman, sexy car.",
       "example": "she's not yours to drool over",
-      "link": "http://drool.urbanup.com/108443"
+      "link": "http://drool.urbanup.com/108443",
+      "last_used": "2026-09-11"
     },
     {
       "word": "dummy",
