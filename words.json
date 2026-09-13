@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "crisp",
-    "description": "One of Rachel and Hallie\u2019s high-fives.",
-    "example": "*high-fives*\nBro, that was heckin crisp.",
-    "link": "http://crisp.urbanup.com/14541006",
-    "last_used": "2026-09-12"
+    "word": "fleek",
+    "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
+    "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
+    "link": "http://fleek.urbanup.com/8196266",
+    "last_used": "2026-09-13"
   },
   "fallback_words": [
     {
@@ -137,7 +137,8 @@
       "word": "fleek",
       "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
       "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
-      "link": "http://fleek.urbanup.com/8196266"
+      "link": "http://fleek.urbanup.com/8196266",
+      "last_used": "2026-09-13"
     },
     {
       "word": "glaze",
