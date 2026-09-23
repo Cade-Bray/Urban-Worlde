@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "gyatt",
-    "description": "when anything has a phat ass",
-    "example": "GYATT (that\u2019s all that needs to be said)",
-    "link": "http://gyatt.urbanup.com/17717021",
-    "last_used": "2026-09-22"
+    "word": "whale",
+    "description": "In sales terms, a whale is a prospect that is significantly larger than an organization\u2019s average customer.Whales are large and extremely difficult to close. Due to their immense size, they are highly sought-after.A whale is typically identified at first by a whale hunter on the sales team, but often requires cross-discipline participation in order to close; this includes assistance from operations, engineering, creative, client success, and business development teams.",
+    "example": "\"Shit...the sales director chewed me out on the sales call this morning. He's totally pissed that I have nothing in my pipeline. I've been focused on this one whale for so long that I haven't had time to prospect for normal-sized deals.\"",
+    "link": "https://www.urbandictionary.com/define.php?term=Whale",
+    "last_used": "2026-09-23"
   },
   "fallback_words": [
     {
@@ -209,6 +209,13 @@
       "example": "Some grebo passed with Sabbath playing on his stereo.\nThe Poppies are at no. 17? God, a grebo band in the charts!\nThey're playing nu-metal now, bloody grebos!",
       "link": "https://www.urbandictionary.com/define.php?term=grebo",
       "last_used": "2026-08-27"
+    },
+    {
+      "word": "whale",
+      "description": "In sales terms, a whale is a prospect that is significantly larger than an organization\u2019s average customer.Whales are large and extremely difficult to close. Due to their immense size, they are highly sought-after.A whale is typically identified at first by a whale hunter on the sales team, but often requires cross-discipline participation in order to close; this includes assistance from operations, engineering, creative, client success, and business development teams.",
+      "example": "\"Shit...the sales director chewed me out on the sales call this morning. He's totally pissed that I have nothing in my pipeline. I've been focused on this one whale for so long that I haven't had time to prospect for normal-sized deals.\"",
+      "link": "https://www.urbandictionary.com/define.php?term=Whale",
+      "last_used": "2026-09-23"
     }
   ]
 }
