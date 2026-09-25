@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "stove",
-    "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
-    "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
-    "link": "https://www.urbandictionary.com/define.php?term=stove",
-    "last_used": "2026-09-24"
+    "word": "blunt",
+    "description": "noun: blunt; plural noun: blunts\na hollowed-out cigar filled with cannabis.",
+    "example": "Adam: Pass me the blunt dude.\n\nJames: OK bro!",
+    "link": "http://blunt.urbanup.com/13773186",
+    "last_used": "2026-09-25"
   },
   "fallback_words": [
     {
@@ -19,7 +19,7 @@
       "description": "noun: blunt; plural noun: blunts\na hollowed-out cigar filled with cannabis.",
       "example": "Adam: Pass me the blunt dude.\n\nJames: OK bro!",
       "link": "http://blunt.urbanup.com/13773186",
-      "last_used": "2026-08-23"
+      "last_used": "2026-09-25"
     },
     {
       "word": "booty",
