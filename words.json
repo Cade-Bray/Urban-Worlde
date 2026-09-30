@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "dilfs",
-    "description": "An acronym for \"Dad I'd Like to F***\". A dilf is any man (typically between the ages of 30-50) who is incredibly attractive and has kids. They are usually really cut, from activities such as pushing strollers, giving piggyback rides, and intense trips to the local park or Disney World. They also have a killer smile and sense of childlike joy, because they play with their kids all the time. Unfortunately, getting with them is hard, as they are typically very faithful to their wife (see MILF).",
-    "example": "Girl #1: Did you see that guy with the stroller over there? He's a total dilf!\nGirl #2: Yeah, but don't go up and flirt with him. That woman with him is probably his wife.",
-    "link": "http://dilf.urbanup.com/7105687",
-    "last_used": "2026-09-29"
+    "word": "floxi",
+    "description": "Short-hand for the word floccinaucinihilipilification, meaning the estimation of something as valueless (encountered mainly as an example of one of the longest words in the English language).",
+    "example": "After we broke up, he was floxi to me.",
+    "link": "https://www.urbandictionary.com/define.php?term=floxi",
+    "last_used": "2026-09-30"
   },
   "fallback_words": [
     {
@@ -216,6 +216,13 @@
       "example": "\"Shit...the sales director chewed me out on the sales call this morning. He's totally pissed that I have nothing in my pipeline. I've been focused on this one whale for so long that I haven't had time to prospect for normal-sized deals.\"",
       "link": "https://www.urbandictionary.com/define.php?term=Whale",
       "last_used": "2026-09-23"
+    },
+    {
+      "word": "floxi",
+      "description": "Short-hand for the word floccinaucinihilipilification, meaning the estimation of something as valueless (encountered mainly as an example of one of the longest words in the English language).",
+      "example": "After we broke up, he was floxi to me.",
+      "link": "https://www.urbandictionary.com/define.php?term=floxi",
+      "last_used": "2026-09-30"
     }
   ]
 }
