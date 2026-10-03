@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "fleek",
-    "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
-    "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
-    "link": "http://fleek.urbanup.com/8196266",
-    "last_used": "2026-10-02"
+    "word": "dutty",
+    "description": "Literally \"dirty\" pronounced with a West Indian accent. Can also have a positive connotation, for example Sean Paul's album title \"Dutty Rock\".",
+    "example": "\"The girl is pretty but she corrupt and dutty!\" \n\nor, in a positive usage:\n\n\"Booya! That freestyle was dutty!\"",
+    "link": "https://www.urbandictionary.com/define.php?term=Dutty",
+    "last_used": "2026-10-03"
   },
   "fallback_words": [
     {
@@ -223,6 +223,13 @@
       "example": "After we broke up, he was floxi to me.",
       "link": "https://www.urbandictionary.com/define.php?term=floxi",
       "last_used": "2026-09-30"
+    },
+    {
+      "word": "dutty",
+      "description": "Literally \"dirty\" pronounced with a West Indian accent. Can also have a positive connotation, for example Sean Paul's album title \"Dutty Rock\".",
+      "example": "\"The girl is pretty but she corrupt and dutty!\" \n\nor, in a positive usage:\n\n\"Booya! That freestyle was dutty!\"",
+      "link": "https://www.urbandictionary.com/define.php?term=Dutty",
+      "last_used": "2026-10-03"
     }
   ]
 }
