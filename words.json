@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "dutty",
-    "description": "Literally \"dirty\" pronounced with a West Indian accent. Can also have a positive connotation, for example Sean Paul's album title \"Dutty Rock\".",
-    "example": "\"The girl is pretty but she corrupt and dutty!\" \n\nor, in a positive usage:\n\n\"Booya! That freestyle was dutty!\"",
-    "link": "https://www.urbandictionary.com/define.php?term=Dutty",
-    "last_used": "2026-10-03"
+    "word": "hardo",
+    "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
+    "example": "Wow did you see Jack at practice today? What a hardo!",
+    "link": "https://www.urbandictionary.com/define.php?term=Hardo",
+    "last_used": "2026-10-04"
   },
   "fallback_words": [
     {
@@ -194,7 +194,7 @@
       "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
       "example": "Wow did you see Jack at practice today? What a hardo!",
       "link": "https://www.urbandictionary.com/define.php?term=Hardo",
-      "last_used": "2026-08-17"
+      "last_used": "2026-10-04"
     },
     {
       "word": "stove",
