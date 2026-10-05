@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "hardo",
-    "description": "A hardo is a person who tries extremely hard at everything. Most times a hardo will try very hard at things that do not require excessive effort. For example, sports practices, gym class, etc.",
-    "example": "Wow did you see Jack at practice today? What a hardo!",
-    "link": "https://www.urbandictionary.com/define.php?term=Hardo",
-    "last_used": "2026-10-04"
+    "word": "finna",
+    "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
+    "example": "I'm finna go da' sto!",
+    "link": "http://finna.urbanup.com/151335",
+    "last_used": "2026-10-05"
   },
   "fallback_words": [
     {
@@ -131,7 +131,7 @@
       "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
       "example": "I'm finna go da' sto!",
       "link": "http://finna.urbanup.com/151335",
-      "last_used": "2026-08-22"
+      "last_used": "2026-10-05"
     },
     {
       "word": "fleek",
