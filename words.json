@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "chirp",
-    "description": "This is what you are doing when you insult someone. You are chirping them.",
-    "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
-    "link": "http://chirp.urbanup.com/2299253",
-    "last_used": "2026-10-08"
+    "word": "bouji",
+    "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
+    "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
+    "link": "http://bouji.urbanup.com/16891433",
+    "last_used": "2026-10-09"
   },
   "fallback_words": [
     {
@@ -33,7 +33,7 @@
       "description": "A bit shit, or very shit. Like a really bad idea on The Apprentice TV Reality Show.\nOur Product design is Bouji.\nWe've done a really Bouji job at this task.",
       "example": "Our Product design is Bouji.\nWe've done a really Bouji job at this task.",
       "link": "http://bouji.urbanup.com/16891433",
-      "last_used": "2026-08-13"
+      "last_used": "2026-10-09"
     },
     {
       "word": "bussi",
