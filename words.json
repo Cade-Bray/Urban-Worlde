@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "aired",
-    "description": "Being ignored by someone when making a statement or asking a question. Also known as blanked and turfed.",
-    "example": "Person 1: Did u watch ** last nite?\nPerson 2:......\nPerson 3: O no u got aired!",
-    "link": "https://www.urbandictionary.com/define.php?term=aired",
-    "last_used": "2026-10-12"
+    "word": "dunzo",
+    "description": "Dunzo, a slang word for done/finshed. Made famous by the Laguna Beach cast.",
+    "example": "This car is so dunzo. (Kristin's car breaks down.)",
+    "link": "http://dunzo.urbanup.com/936426",
+    "last_used": "2026-10-13"
   },
   "fallback_words": [
     {
@@ -124,7 +124,7 @@
       "description": "Dunzo, a slang word for done/finshed. Made famous by the Laguna Beach cast.",
       "example": "This car is so dunzo. (Kristin's car breaks down.)",
       "link": "http://dunzo.urbanup.com/936426",
-      "last_used": "2026-09-18"
+      "last_used": "2026-10-13"
     },
     {
       "word": "finna",
