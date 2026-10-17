@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "stove",
-    "description": "Cigarette: Northern slang for a cigarette, used oft by mashed up mancunian ravers becasue of the resemblance of a hot(electric)stove to the end of a lit cigarette. Originated circa 1991 in the early halcyon days of the rave culture; we speculate during a drug fuelled hallucination by said manc.",
-    "example": "'fuck me noel, i am bolloxed, is that a ciggy in your mouth, or the stove from me 'nans kitchen'/ \nGeneral use: 'Give us a stove you cunt'",
-    "link": "https://www.urbandictionary.com/define.php?term=stove",
-    "last_used": "2026-10-16"
+    "word": "skeef",
+    "description": "To take something small, that doesn't quite qualify as a theft. Probably from the Danish \"sk\u00e6v\" or the Dutch \"scheef\", both of which are pronounced similarly, meaning \"askew, or not quite right'. To change an item's ownership without permission, but only something small and of little worth.",
+    "example": "\"I skeefed an apple off the neighbor's tree.\" \"I skeefed some chips outta your bag when you looked away.\" \"Don't skeef my chair when I go to the bathroom.\"",
+    "link": "https://www.urbandictionary.com/define.php?term=Skeef",
+    "last_used": "2026-10-17"
   },
   "fallback_words": [
     {
@@ -187,7 +187,7 @@
       "description": "To take something small, that doesn't quite qualify as a theft. Probably from the Danish \"sk\u00e6v\" or the Dutch \"scheef\", both of which are pronounced similarly, meaning \"askew, or not quite right'. To change an item's ownership without permission, but only something small and of little worth.",
       "example": "\"I skeefed an apple off the neighbor's tree.\" \"I skeefed some chips outta your bag when you looked away.\" \"Don't skeef my chair when I go to the bathroom.\"",
       "link": "https://www.urbandictionary.com/define.php?term=Skeef",
-      "last_used": "2026-09-15"
+      "last_used": "2026-10-17"
     },
     {
       "word": "hardo",
