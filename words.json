@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "crine",
-    "description": "A \"word\" aggravating people say in replace of \"I'm crying\". Usually used when things are remotely funny.",
-    "example": "*See's a Kermit the Frog: But That's None Of My Business meme.*\nI'M CRINE!",
-    "link": "http://crine.urbanup.com/7816044",
-    "last_used": "2026-10-25"
+    "word": "fleek",
+    "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
+    "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
+    "link": "http://fleek.urbanup.com/8196266",
+    "last_used": "2026-10-26"
   },
   "fallback_words": [
     {
@@ -138,7 +138,7 @@
       "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
       "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
       "link": "http://fleek.urbanup.com/8196266",
-      "last_used": "2026-10-02"
+      "last_used": "2026-10-26"
     },
     {
       "word": "glaze",
