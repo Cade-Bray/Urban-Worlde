@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "finna",
-    "description": "Abbreviation of \"fixing to\". Normally means \"going to\".",
-    "example": "I'm finna go da' sto!",
-    "link": "http://finna.urbanup.com/151335",
-    "last_used": "2026-10-28"
+    "word": "crisp",
+    "description": "One of Rachel and Hallie\u2019s high-fives.",
+    "example": "*high-fives*\nBro, that was heckin crisp.",
+    "link": "http://crisp.urbanup.com/14541006",
+    "last_used": "2026-11-01"
   },
   "fallback_words": [
     {
@@ -82,7 +82,7 @@
       "description": "One of Rachel and Hallie\u2019s high-fives.",
       "example": "*high-fives*\nBro, that was heckin crisp.",
       "link": "http://crisp.urbanup.com/14541006",
-      "last_used": "2026-09-12"
+      "last_used": "2026-11-01"
     },
     {
       "word": "dilfs",
