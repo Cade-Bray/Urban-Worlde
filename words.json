@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "dummy",
-    "description": "A Baltimore Slang term used to address everybody no matter the situation.",
-    "example": "\u201c Dummy stop playing with me\u201d\n\u201c Woe Dummy Fuck is up\u201d\n\n\u201cDummy not even stamped down cherry hill his bluffin ass\u201d",
-    "link": "http://dummy.urbanup.com/12826937",
-    "last_used": "2026-11-15"
+    "word": "whimz",
+    "description": "Gen Z whimsy",
+    "example": "Millennial optimism may be gone, but Gen Z whimsy (WhimZ) is in.",
+    "link": "https://www.urbandictionary.com/define.php?term=WhimZ",
+    "last_used": "2026-11-16"
   },
   "fallback_words": [
     {
@@ -237,6 +237,13 @@
       "example": "Person 1: Did u watch ** last nite?\nPerson 2:......\nPerson 3: O no u got aired!",
       "link": "https://www.urbandictionary.com/define.php?term=aired",
       "last_used": "2026-11-12"
+    },
+    {
+      "word": "whimz",
+      "description": "Gen Z whimsy",
+      "example": "Millennial optimism may be gone, but Gen Z whimsy (WhimZ) is in.",
+      "link": "https://www.urbandictionary.com/define.php?term=WhimZ",
+      "last_used": "2026-11-16"
     }
   ]
 }
