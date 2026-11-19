@@ -1,10 +1,10 @@
 {
   "today": {
-    "word": "chirp",
-    "description": "This is what you are doing when you insult someone. You are chirping them.",
-    "example": "Did you see Fabian chirping that guy about his mom?\n\nJane got chirped so badly.",
-    "link": "http://chirp.urbanup.com/2299253",
-    "last_used": "2026-11-18"
+    "word": "fleek",
+    "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
+    "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
+    "link": "http://fleek.urbanup.com/8196266",
+    "last_used": "2026-11-19"
   },
   "fallback_words": [
     {
@@ -138,7 +138,7 @@
       "description": "An annoying term used by annoying teenagers (see middleschoolers) meant to be \"on point\".",
       "example": "Jill: Look, today my eyebrows are on fleek!\nAndrew: Oh, shut up.",
       "link": "http://fleek.urbanup.com/8196266",
-      "last_used": "2026-10-26"
+      "last_used": "2026-11-19"
     },
     {
       "word": "glaze",
